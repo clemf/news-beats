@@ -1,10 +1,13 @@
 newsBeats.factory('BeatsFactory', function () {
-  this.beats = [];
-  this.temp = {};
+  var factory = {};
+  factory.allBeats = [{ name: 'Crime' }, { name: 'Business' }, { name: 'Politics' }];
 
-  this.addBeat = function(beat) {
-    this.beats.push({
-      name: this.temp.beatName
-    });
-  };
+
+  // factory.addBeat = function() {
+  //   factory.allBeats.push({
+  //     name: factory.beatName
+  //   });
+  // };
+
+  return factory;
 });
