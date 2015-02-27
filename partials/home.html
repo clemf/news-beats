@@ -1,5 +1,14 @@
+<form ng-submit="factory.addBeat()">
+  <div class="form-group">
+    <label for="beat-name">Enter Beat Name</label>
+    <input type="text" class="form-control" ng-model="beats.beatName">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 <ul>
   <li ng-repeat="item in beats.allBeats">{{ item.name }}</li>
 </ul>
 
-{{ beats.beats }}
+{{ beats.allBeats }}
+{{ beats.beatName }}
