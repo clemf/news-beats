@@ -1,3 +1,3 @@
-newsBeats.controller('BeatsCtrl', function(BeatsFactory) {
+newsBeats.controller('BeatsCtrl', function (BeatsFactory) {
   this.addBeat = BeatsFactory.addBeat();
 });

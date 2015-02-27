@@ -1,4 +1,4 @@
-newsBeats.factory('BeatsFactory', function() {
+newsBeats.factory('BeatsFactory', function () {
   this.beats = [];
   this.temp = {};
 
