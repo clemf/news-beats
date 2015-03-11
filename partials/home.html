@@ -1,11 +1,15 @@
-<form ng-submit="beats.addBeat()">
+<ul class="list-group">
+  <li ng-repeat="item in beats.allBeats" class="list-group-item">{{ item.name }}</li>
+</ul>
+
+<form ng-submit="beats.addBeat()" class="form-inline">
   <div class="form-group">
-    <label for="beat-name">Enter Beat Name</label>
-    <input type="text" class="form-control" ng-model="beats.beatName">
+    <label for="beat-name" class="sr-only">Add a new beat</label>
+    <input type="text" class="form-control" ng-model="beats.beatName" placeholder="Beat name">
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button type="submit" class="btn btn-default">Add a new beat</button>
 </form>
 
-<ul>
-  <li ng-repeat="item in beats.allBeats">{{ item.name }}</li>
-</ul>
+<form ng-submit="beats.addReporter()" class="form-inline">
+  
+</form>
