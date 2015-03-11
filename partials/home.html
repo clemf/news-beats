@@ -9,7 +9,22 @@
   </div>
   <button type="submit" class="btn btn-default">Add a new beat</button>
 </form>
-
+<br>
 <form ng-submit="beats.addReporter()" class="form-inline">
-  
+  <select class-="form-control">
+    <option ng-repeat="item in beats.allBeats">{{item.name}}</option>
+  </select>
+  <div class="form-group">
+    <label for="reporter-name" class="sr-only">Enter Reporter name</label>
+    <input type="text" class="form-control" ng-model="beats.reporterName" placeholder="Reporter name">
+  </div>
+  <div class="form-group">
+    <label for="reporter-employ" class="sr-only">Enter years employed</label>
+    <input type="text" class="form-control" ng-model="beats.reporterYearsEmployed" placeholder="Years employed">
+  </div>
+  <div class="form-group">
+    <label for="reporter-birthday" class="sr-only">Enter Reporter birthday</label>
+    <input type="text" class="form-control" ng-model="beats.reporterBirthday" placeholder="Birthday">
+  </div>
+  <button class="btn btn-default" type="submit">Add reporter to beat</button>
 </form>
