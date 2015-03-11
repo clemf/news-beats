@@ -1,13 +1,10 @@
 newsBeats.factory('BeatsFactory', function () {
-  var factory = {};
+  var factory ={};
   factory.allBeats = [{ name: 'Crime' }, { name: 'Business' }, { name: 'Politics' }];
-
-
-  factory.addBeat = function() {
-    factory.allBeats.push({
-      name: factory.beatName
+  factory.addBeat = function(beatName) {
+    this.allBeats.push({
+      name: beatName
     });
   };
-
   return factory;
 });
